@@ -1,37 +1,113 @@
-# Marvel-FighterZ
-In this game, players can choose between two gamemodes (Free For All or Teams), customize their gameplay experience, and compete in a dynamic race to the finish line. Built with Java, this project demonstrates strong object-oriented programming principles and interactive design.
+# Racing Game - Java Project
 
-**MAIN CLASS** - Menu Class   
+## Overview
+Welcome to the **Marvel FighterZ**, a dynamic and interactive Java-based game where players can choose between two exciting game modes, customize their gameplay experience, and compete in a thrilling race to the finish line. This project showcases strong object-oriented programming principles and interactive design, providing an engaging experience for players.
 
-The Menu class must be run inorder for this program to work. Opening the Menu greets you with a title page,
-where you must press "Start" to reach the next screen. The following screen gives the option to pick a
-desired gamemode: FFA (Free For All), or TEAMS (Two teams of two).
+---
 
-  FFA - 	Free for All (no teams, all solo), user is able to able to enter the names for 4 different heroes
+## Features
+1. **Game Modes**:
+   - **Free For All (FFA)**: A solo race where four players compete individually.
+   - **Teams**: A team-based race with two teams of two players each.
 
-  Teams - Two teams, each with two players. You may cycle through the heroes by clicking on them, and then confirming your choice with the
-		confirm button placed underneath that specific hero. This program does not allow for duplicate characters. After picking the
-		second character for the second team, you may enter the names for the teams, which will be displayed for the winner at the
-		end of round.
+2. **Customization**:
+   - **Hero Selection**: Choose from a variety of heroes. In Teams mode, ensure no duplicate heroes are selected.
+   - **Background Selection**: Pick from three unique backgrounds to set the stage for the race.
+   - **Path Selection**: Choose between two path configurations:
+     - **Linear**: Heroes travel straight across the background.
+     - **Around**: Heroes travel around the background.
 
-After going through the gamemode selection, you will enter a background selection screen, where you are able to chose between 3 options.
-You will have to select a background before confirming an option. After this, you will enter a path selection screen. There are 2 options.
-Linear or Around, where the first option sets the game configuration to make the heroes travel straight across the background, and the 
-second option sets the game configuration to make the heroes travel around the background. After this, if you originally chose the
-FFA gamemode, you are given an extra option to reset previous scores, where you will have to select "Yes" or "No". Selecting yes 
-starts the game with everyone having a score of 0, where selecting no starts the game off with everyone keeping their scores from the last
-time the program was ran.
+3. **Score Management**:
+   - In FFA mode, players can choose to reset previous scores or continue with existing scores from the last session.
 
+4. **Interactive Gameplay**:
+   - **Roll Button**: Manually roll to move heroes one by one.
+   - **Automatic Mode**: Enable automatic rolling to speed up gameplay.
+   - **Pause Button**: Pause the game at any time.
+   - **Restart Button**: Restart the game from the beginning, available at any point during the race.
 
-Universe class
+5. **Leaderboard**:
+   - At the end of each round, a leaderboard displays the ranking of heroes based on their finishing positions.
+   - The scoreboard at the bottom of the screen updates scores based on each hero's position.
 
-1. The Roll icon rolls a players turn and moves them 1 by 1, but to speed up the process you can turn on the the automatic mode if you do not
-   want to click the roll button each time.
+---
 
-2. The pause button pauses the game no matter if you are rolling manually or are in automatic mode. 
+## How to Use
+1. **Run the Program**:
+   - Launch the game by running the `Menu` class.
+   - The title screen will appear. Press "Start" to proceed.
 
-3. The restart button restart the steps and sets the game back to the beginning. The button is able to be pressed at any time during the
-   game or at the end of the race.
+2. **Select Game Mode**:
+   - Choose between **FFA** (Free For All) or **Teams** mode.
+   - **FFA**: Enter names for four individual heroes.
+   - **Teams**: Select two heroes for each team and enter team names.
 
-At the end of each round, a leaderboard for that round is displayed, ranking the heroes in the order they finished. The scoreboard on the
-bottom of the screen also updates the score based on the positions of each hero.
+3. **Customize Gameplay**:
+   - **Background Selection**: Choose one of three backgrounds.
+   - **Path Selection**: Select either Linear or Around path configuration.
+   - **Score Reset (FFA Only)**: Choose to reset scores or continue with previous scores.
+
+4. **Play the Game**:
+   - Use the **Roll** button to move heroes manually or enable **Automatic Mode** for faster gameplay.
+   - Pause the game at any time using the **Pause** button.
+   - Restart the game using the **Restart** button.
+
+5. **View Results**:
+   - After each round, the leaderboard displays the finishing order of heroes.
+   - The scoreboard updates with the latest scores based on hero positions.
+
+---
+
+## Classes and Functionality
+### Main Class - `Menu`
+- **Purpose**: The entry point of the program.
+- **Functionality**:
+  - Displays the title screen and "Start" button.
+  - Guides the user through game mode selection, hero customization, and gameplay setup.
+
+### `Universe` Class
+- **Purpose**: Manages the core gameplay mechanics.
+- **Functionality**:
+  - Handles hero movement, rolling, and automatic mode.
+  - Provides buttons for pausing and restarting the game.
+  - Displays the leaderboard and updates the scoreboard.
+
+---
+
+## Gameplay Mechanics
+- **Rolling**: Determines the movement of heroes during the race.
+- **Automatic Mode**: Speeds up gameplay by automating the rolling process.
+- **Pausing**: Allows players to pause the game at any time.
+- **Restarting**: Resets the game to its initial state, allowing players to start over.
+
+---
+
+## Score Management
+- **FFA Mode**:
+  - Players can choose to reset scores to zero or continue with scores from the previous session.
+- **Teams Mode**:
+  - Scores are tracked for each team and displayed on the scoreboard.
+
+---
+
+## Leaderboard and Scoreboard
+- **Leaderboard**:
+  - Displays the ranking of heroes at the end of each round.
+- **Scoreboard**:
+  - Tracks and updates scores based on hero positions during the race.
+
+---
+
+## Requirements
+- **Java Runtime Environment (JRE)**: Ensure Java is installed on your system.
+- **IDE or Command Line**: Use an IDE like IntelliJ IDEA or Eclipse, or run the program via the command line.
+
+---
+
+## Notes
+- The game is designed to be intuitive and user-friendly, with clear prompts and error handling.
+- Object-oriented programming principles are used extensively to ensure modularity and scalability.
+- The game supports replayability with customizable options and score tracking.
+- This game was created with my friends, my main contributions are the main menu class, and handling file I/O
+
+---
