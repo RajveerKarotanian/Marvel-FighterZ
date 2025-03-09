@@ -1,4 +1,4 @@
-# Racing Game - Java Project
+# Marvel FighterZ - Java Project
 
 ## Overview
 Welcome to the **Marvel FighterZ**, a dynamic and interactive Java-based game where players can choose between two exciting game modes, customize their gameplay experience, and compete in a thrilling race to the finish line. This project showcases strong object-oriented programming principles and interactive design, providing an engaging experience for players.
